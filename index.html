@@ -1,0 +1,59 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<title>Love Animation</title>
+
+<style>
+body {
+  background: black;
+  color: #ff4d6d;
+  font-size: 30px;
+  font-family: Arial;
+  overflow: hidden;
+}
+
+/* Typing Effect */
+.typing {
+  border-right: 3px solid pink;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: typing 4s steps(20) infinite alternate,
+             blink 0.7s infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 250px }
+}
+
+@keyframes blink {
+  50% { border-color: transparent }
+}
+
+/* Running Text */
+.running {
+  position: absolute;
+  bottom: 50px;
+  white-space: nowrap;
+  animation: run 8s linear infinite;
+}
+
+@keyframes run {
+  from { left: 100% }
+  to { left: -100% }
+}
+</style>
+
+</head>
+
+<body>
+
+<h1 class="typing">I Love You ❤️</h1>
+
+<div class="running">💖 I Love You 💖 I Miss You 💖</div>
+
+</body>
+</html>
+```
